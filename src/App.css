@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+.wrapper{
+    background-image: url('./pics/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.6s ease-out;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 2%;
+}
+.wrapper.app{
+    background-image: url('./pics/background.jpg');
+}
+.wrapper.cold{
+    background-image: url('./pics/cold.jpg');
+}
+.wrapper.rain{
+    background-image: url('./pics/rain.jpg');
+}
+.wrapper.hot{
+    background-image: url('./pics/hot.jpg');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    background-color: rgba(100, 148, 237, 0.295);
+    height: 85%;
+    border-radius: 10px;
+    padding-top: 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.userInput{
+    background-color: rgba(186, 208, 214, 0.644);
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 40%;
+    height: 45px;
+    box-shadow: 3px 3px 4px rgba(39, 38, 38, 0.719);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.userInput:focus{
+    background-color: rgba(165, 221, 223, 0.733);
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(125, 125, 139, 0.89);
+    caret-color: black;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.city{
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px rgba(1, 1, 44, 0.89);
+    font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.date{
+    color: white;
+    text-shadow: 3px 3px 3px rgba(1, 1, 44, 0.89);
+    font-size: 30px;
+}
+
+.temp{
+    display: inline-block;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 3px 3px 3px rgba(1, 1, 44, 0.89);
+    font-size: 90px;
+    background-color: rgba(224, 221, 221, 0.623);
+    box-shadow: 5px 5px 5px rgba(93, 93, 100, 0.89);
+}
+
+.title{
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px rgba(1, 1, 44, 0.89);
+    font-size: 40px;
+}
+
+.type{
+    color: white;
+    text-shadow: 3px 3px 3px rgba(1, 1, 44, 0.89);
+    font-size: 30px;
+}
+
+.kevin{
+    color: rgb(16, 16, 131);
+}
+
+.kevin:hover{
+    color: red;
+}
+
+
+@media only screen and (max-width: 767px){
+    footer{
+        color: black;
+        bottom: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    footer{
+        color: black;
+        bottom: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    footer{
+        color: black;
+        bottom: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    footer{
+        color: black;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(165, 221, 223, 0.733);
+    }
 }
